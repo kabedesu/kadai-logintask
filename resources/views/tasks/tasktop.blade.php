@@ -23,7 +23,9 @@
         @endforeach
     </tbody>
 </table>
-{!! link_to_route('tasks.create','新規タスク作成',['class'=>'btn btn-primary']) !!}
+{{ $tasks->links('pagination::bootstrap-4') }}
+{!! link_to_route('tasks.create','新規タスク作成',[],['class'=>'btn btn-primary mb-3']) !!}
+
 @else
 
     <p>No Task</p>
