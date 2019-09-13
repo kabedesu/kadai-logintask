@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
-{{ $task }}
+{{\Auth::id()}}
+{{ var_dump($data) }}
 
 @endsection

@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 @section('content')
     <p class="text-center">{{ $task->title }} 詳細ページ [task_id {{ $task->task_id }}]</p>
